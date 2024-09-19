@@ -1,24 +1,11 @@
-2 + 2
-4 - 2
-2 * 2
-2 * 2
-4 / 2
-print("Python has three numeric types: int, float, and complex")
-myValue = 1
-print(myValue)
-print(type(myValue))
-print(str(myValue) + " is of the data type " + str(type(myValue)))
-myValue = 3.14
-print(myValue)
-print(type(myValue))
-print(str(myValue) + " is of the data type " + str(type(myValue)))
-myValue = 1 + 2j
-print(myValue)
-print(type(myValue))
-print(str(myValue) + " is of the data type " + str(type(myValue)))
-myValue = True
-print(myValue)
-print(type(myValue))
-print(str(myValue) + " is of the data type " + str(type(myValue)))
+# Lista de contas
+contas = ["2 + 2", "4 - 2", "2 * 2", "2 * 2", "4 / 2"]
 
+# Função para calcular e imprimir uma conta por vez
+def imprimir_contas(contas):
+    for conta in contas:
+        resultado = eval(conta)
+        print(f"{conta} = {resultado}")
 
+# Chamar a função para imprimir as contas
+imprimir_contas(contas)
