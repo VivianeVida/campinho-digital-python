@@ -1,7 +1,3 @@
-4 - 2
-2 * 2
-2 * 2
-4 / 2
 print("Python has three numeric types: int, float, and complex")
 myValue = 1
 print(myValue)
